@@ -1655,7 +1655,7 @@ async def on_ready():
 @tree.command(name="get_post", description="Get a random writing prompt or tip.")
 async def get_post(interaction: discord.Interaction, category: str):
     """Send a random writing prompt or tip based on the category."""
-    if category == "Writing Prompt":
+    if category == "prompt":
         random_post = random.choice(writing_prompts)
         category_title = "Writing Prompt"
     elif category == "tip":
